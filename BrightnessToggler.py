@@ -12,6 +12,7 @@ import screen_brightness_control as sbc
 all_monitors = sbc.list_monitors()
 # count all monitor names (to get maximum amount of connected monitors)
 count_monitors = len(all_monitors)
+#print(count_monitors)
 # output of all monitor brightness level in an array 
 all_brightness = sbc.get_brightness()
 
@@ -24,8 +25,6 @@ while counter < count_monitors:
     counter= counter + 1
     value.append(100)
 #print(value)
-
-print(count_monitors)
 
 # Condition: then all monitors got the brightness level of 100%
 # All monitors toggle the brightness to the toggle_value
